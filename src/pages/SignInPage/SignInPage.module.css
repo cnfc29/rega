@@ -47,6 +47,7 @@ button.btn {
   font-size: 16px;
   background-color: var(--purpleColor);
   color: var(--whiteColor);
+  cursor: pointer;
 }
 
 .error {

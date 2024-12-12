@@ -18,11 +18,11 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const storedUser = localStorage.getItem("user");
+    const storedUser = sessionStorage.getItem("user");
     if (storedUser) {
       setUser(JSON.parse(storedUser));
     } else {
-      localStorage.setItem("user", false);
+      sessionStorage.setItem("user", false);
       setUser(false);
     }
     setLoading(false);

@@ -28,7 +28,7 @@ export default function SignInPage({ setUser }) {
     try {
       const res = await signIn(data);
       if (res.data.result === true) {
-        localStorage.setItem("user", true);
+        sessionStorage.setItem("user", true);
         setUser(true);
         navigate("/applications");
       } else if (res.data.result === false) {
