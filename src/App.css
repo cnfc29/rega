@@ -1,0 +1,121 @@
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+
+  --whiteColor: #f2f5fc;
+}
+
+body.dark {
+  --backgroundColor: #1c1e23;
+  --purpleColor: #9449ea;
+
+  /* Text */
+  --allTextColor: #f2f5fc;
+  --descriptionText: #838da7;
+
+  /* Input */
+  --inputBackgroundColor: #22252c;
+  --inputPlaceholderColor: #5a606e;
+
+  /* Options */
+  --backgroundOption: #1f2128;
+  --backgroundSelectedOrHoverOption: #262b38;
+  --colorOption: #838da7;
+
+  /* NavLink */
+  --backgroundColorLink: #1f2128;
+  --backgroundColorTotalLink: #22252c;
+  --colorTotalLink: #3d424d;
+  --colorTotalLinkActive: #5a606e;
+
+  /* Cards */
+  --greenColor: #1f6252;
+  --redColor: #783323;
+  --borderBottomCard: #303749;
+
+  /* Buttons */
+  --approveBackgroundButton: #203233;
+  --approveColorButton: #22cb49;
+  --approveBackgroundButtonHover: #1d2e2f;
+  --approveColorButtonHover: #3ca354;
+  --rejectBackgroundButton: #3b2526;
+  --rejectColorButton: #b55449;
+  --rejectBackgroundButtonHover: #342021;
+  --rejectColorButtonHover: #c37055;
+
+  /* ERROR */
+  --errorColor: #b55449;
+
+  /* Status */
+  --approveStatusColor: #9eebcf;
+  --rejectStatusColor: #ebc6ba;
+
+  /* Filter */
+  --filterHoverBackgroundColor: #303749;
+}
+
+body.light {
+  --backgroundColor: #ffffff;
+  --purpleColor: #a556ff;
+
+  /* Text */
+  --allTextColor: #454c5e;
+  --descriptionText: #76809a;
+
+  /* Input */
+  --inputBackgroundColor: #f0f3f9;
+  --inputPlaceholderColor: #b0b9cd;
+
+  /* Options */
+  --backgroundOption: #f8f9fd;
+  --backgroundSelectedOrHoverOption: #e6eaf4;
+  --colorOption: #76809a;
+
+  /* NavLink */
+  --backgroundColorLink: #f8f9fd;
+  --backgroundColorTotalLink: #f0f3f9;
+  --colorTotalLink: #d3d8e2;
+  --colorTotalLinkActive: #b0b9cd;
+
+  /* Cards */
+  --greenColor: #66c9b2;
+  --redColor: #d28776;
+  --borderBottomCard: #d0d8ed;
+
+  /* Buttons */
+  --approveBackgroundButton: #c0d8d9;
+  --approveColorButton: #1ebb42;
+  --approveBackgroundButtonHover: #a6cacb;
+  --approveColorButtonHover: #529e64;
+  --rejectBackgroundButton: #edd1d2;
+  --rejectColorButton: #fa918d;
+  --rejectBackgroundButtonHover: #edc9cb;
+  --rejectColorButtonHover: #e2827e;
+
+  /* ERROR */
+  --errorColor: #fa918d;
+
+  /* Status */
+  --approveStatusColor: #e8f9f3;
+  --rejectStatusColor: #f8eeeb;
+
+  /* Filter */
+  --filterHoverBackgroundColor: #d0d8ed;
+}
+
+#root {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--backgroundColor);
+  color: var(--allTextColor);
+}

@@ -1,0 +1,35 @@
+.customSelect__control {
+  height: 56px;
+}
+
+.customSelect__menu {
+  font-size: 14px;
+}
+
+.customSelect__option {
+  height: 36px;
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.errorText {
+  color: var(--errorColor);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (max-width: 555px) {
+  .customSelect__control {
+    font-size: 14px;
+    height: 44px;
+  }
+
+  .errorText {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

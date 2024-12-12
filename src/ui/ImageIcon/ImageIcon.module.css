@@ -1,0 +1,27 @@
+.image img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-color: var(--inputBackgroundColor);
+}
+
+.image.big img {
+  width: 144px;
+  height: 144px;
+  border-radius: 12px;
+  object-fit: cover;
+  background-color: var(--inputBackgroundColor);
+}
+
+.svgIcon {
+  width: 48px;
+  height: 48px;
+  fill: var(--borderBottomCard);
+}
+
+.svgIcon.big {
+  width: 144px;
+  height: 144px;
+  fill: var(--borderBottomCard);
+}

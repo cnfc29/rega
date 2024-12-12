@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  padding: 32px 12px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.settings {
+  display: flex;
+  gap: 8px;
+  align-self: flex-end;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--descriptionText);
+}
+
+.linksList {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 570px) {
+  .linksList {
+    gap: 6px;
+  }
+
+  .container {
+    padding-right: 0px;
+  }
+
+  .settings {
+    padding-right: 12px;
+  }
+}
