@@ -15,6 +15,7 @@ import { SearchTypeProvider } from "./HOCs/SearchTypeProvider";
 
 function App() {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
@@ -24,7 +25,12 @@ function App() {
       localStorage.setItem("user", false);
       setUser(false);
     }
+    setLoading(false);
   }, []);
+
+  if (loading) {
+    return <div>Загрузка...</div>;
+  }
 
   const routes = [
     { path: ROUTER.main, element: <MainPage /> },
